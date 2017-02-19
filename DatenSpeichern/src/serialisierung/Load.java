@@ -15,9 +15,11 @@ public class Load
 		long time = System.nanoTime();
 		Data[] data = load();
 		System.out.println("Time: " + (System.nanoTime() - time)/(1000*1000*1000.0) + " s");
-
-		data[0].print();
-		data[1000000-1].change();
+		
+		for(Data i: data)
+		{
+			i.print();
+		}
 	}
 
 	private static Data[] load() {
