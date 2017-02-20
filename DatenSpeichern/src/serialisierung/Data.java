@@ -5,6 +5,7 @@ import java.io.Serializable;
  * Beispielklasse die Objekte erzeugt, welche wir später speichern und einlesen wollen. In diesem Fall speichert das Objekt einen Integer-Wert und verfügt über eine Methode zum Auslesen des Werts und zum verändern des Werts
  */
 
+//Daten sind cool
 public class Data implements Serializable 
 {
 
