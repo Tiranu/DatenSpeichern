@@ -30,7 +30,7 @@ public class Persistieren {
 		}
 		}
 			
-// die Methode liest den Text aus der übergeben Datei ein und gibt ihn auf die Konsole aus. Die Datei wird über "pfad" angegeben.		
+// Die Methode liest den Text aus der übergeben Datei ein und gibt ihn auf die Konsole aus. Die Datei wird über "pfad" angegeben.		
 	public static void read(String pfad) {
 		Reader reader = null;
 		try
@@ -43,7 +43,7 @@ public class Persistieren {
 		  }
 		}
 		catch ( IOException e ) {
-		  System.err.println( "Fehler beim Lesen der Datei!" );
+		  System.err.println( "Fehler beim Lesen der Datei aufgetreten!" );
 		}
 		finally {
 		  try { reader.close(); } catch ( Exception e ) { e.printStackTrace(); }

@@ -22,6 +22,8 @@ public class Load
 		}
 	}
 
+	// Die Methode gibt ein einfach Array vom Typ "Data" zurück also der Klasse die wir ebenfalls bereits angelegt haben!
+	
 	private static Data[] load() {
 		Data[] data = new Data[1000000]; // Erstellung des Arrays mit der Größe 1.000.000 
  
@@ -32,10 +34,9 @@ public class Load
 				data[i] = (Data) objectInput.readObject(); // Die Methode readObject() unseres ObjectInputStreams liest ein Data-Objekt aus unserer Datei ein.
 			}
 
-		System.out.println("Deserialization erfolgreich");
-		System.out.println();
+		System.out.println("Deserialization war erfolgreich");
 		} catch (Exception e) {
-			System.out.println("Deserialization fehlgeschlagen");
+			System.out.println("Deserialization ist fehlgeschlagen");
 			System.out.println();
 		}
 
